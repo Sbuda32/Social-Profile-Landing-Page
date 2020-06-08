@@ -2,9 +2,274 @@
     box-sizing: border-box;
 }
 
-.cover-page-image {
-    width: 80%;
-    height: 25vh;
+.nav-bar {
+    background-color: chartreuse;
+    margin-top: 2vh;
+    width: 85%;
+    height: 6vh;
+    float: right;
+}
+
+.status-bar {
+    width: 34%;
+    height: 8vh;
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    top: 4vh;
+    right: 44vw;
+}
+
+.status-textarea {
+    position: relative;
+    height: 5vh;
+    width: 20vw;
+    top: 1.3vh;
+    left: 1vw;
+}
+
+.status-bar-icons {
+    display: inline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
     float: left;
+}
+
+li a {
+    padding: 8px;
+    display: block;
+}
+
+.user-meta-data {
+    float: right;   
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    position: relative;
+    left: 3vw;
+    top: 7vh;
+}
+
+.profile-picture-thumbnail {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    float: right;
+    position: relative;
+    top: 12vh;
+    left: 4vw;
+}
+
+.post-profile-picture-thumbnail {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+}
+
+.post {
+    width: 39.5%;
+}
+
+.white-space {
+    width: auto;
+    height: 3vh;
+}
+
+.feeds-or-posts {
+    width: 40%;
+    float: right;
+    position: relative;
+    top: -15vh;
+    left: -10.6vw;
+}    
+
+.card {
+    width: 34vw;
+    height: 25vh;
+    border: 1px solid black;
+    position: relative;
+    left: 5.5vw;
+    top: -8vh;
+}
+
+br {
+    position: relative;
+    float: right;
+}
+
+a.link-content {
+    display: block;
+    position: relative;
+    bottom: 8vw;
+    height: 19vh;
+    overflow: hidden;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.reactions-and-share-options {
+    position: relative;
+    background-color: chartreuse;
+    height: 6vh;
+    bottom: 16vh;
+}
+
+.link-heading {
+    position: relative;
+    float: right;
+    left: -15vw;
+    bottom: 3vh;
+}
+
+.link-short-description {
+    position: relative;
+    float: right;
+    left: 6vw;
+    width: 63%;
+}
+
+.username {
+    position: relative;
+    top: -2.01vh;
+    left: 1vw;
+}
+
+.last-modified {
+    position: relative;
+    left: 12vw;
+    bottom: 3.84vw;
+}
+
+.who-can-see {
+    position: relative;
+    left: 19vw;
+    bottom: 6.72vw;
+}
+
+.avatar-thumbnail {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    float: left;
+}
+
+.row {
+    width: 95%;
+    justify-content: space-between;
+    position: relative;
+    height: 10vh;
+    display: flex;
+}
+
+i {
+    position: relative;
+    left: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.suggested-circles-section {
+    float: right;
+    position: relative;
+    left: 31vw;
+    width: 34%;
+    top: 3vh;
+}
+
+.users-circles-section {
+    float: right;
+    position: relative;
+    left: -2.2vw;
+    width: 34%;
+    top: 3vh;
+}
+.cover-page-image {
+    width: 85%;
+    height: 25vh;
+    float: right;
     background-color: aqua;
+}
+
+.left-panel {
+    position: absolute;
+    width: 14%;
+    height: 82vh;
+}
+
+.left-panel-grid-container {
+    display: grid;
+    grid-row-gap: 4vh;
+    margin-top: 4vh;
+    justify-content: center;
+}
+
+.left-panel-grid-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-thumbs-up {
+    position: relative;
+    top: 1.5vh;
+}
+
+.fa-heart {
+    position: relative;
+    top: 1.5vh;
+}
+
+.fa-thumbs-down {
+    position: relative;
+    top: 1.5vh;
+}
+
+.fa-share-square {
+    position: relative;
+    top: 1.5vh;
+    float: right;
+    left: -1vw;
+}
+
+.fa-home {
+    font-size: 3.5rem;
+}
+
+.fa-user-alt {
+    font-size: 3.5rem;
+}
+
+.fa-copy {
+    font-size: 3.5rem;
+}
+
+.fa-layer-group {
+    font-size: 3.5rem;
+}
+
+.fa-images {
+    font-size: 3.5rem;
+}
+
+.fa-ellipsis-h {
+    font-size: 3.5rem;
 }
