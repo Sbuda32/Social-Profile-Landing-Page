@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./profilePageStyling.css" />
 
     <script src="https://kit.fontawesome.com/4af78615bb.js" crossorigin="anonymous"></script>
-
+    
     <title>Document</title>
 </head>
 <body>
-    <div class="cover-page-image">
+    <div id="coverPageImage" class="cover-page-image">
         Image Here...
 
-        <div class="profile-picture"></div>
+        <div id="profilePicture" class="profile-picture"></div>
     </div>
 
-    <div class="nav-bar">
+    <div id="navBar" class="nav-bar">
         <ul>
             <div class="menu">
                 <li> <a href="#about">About </a></li>
@@ -29,18 +29,32 @@
             <div class="user-meta-data">
                 <li> <a href="#view">view </a></li>
                 <li> <a href="#profile">profile </a></li>
-                <li> <a href="#for">for </a></li>
-                <li> <a href="#all">all </a></li>
-                <li> <a href="#network-icon">network-icon </a></li>
-                <li> <a href="#back">back </a></li>
-                <li> <a href="#rating">rating </a></li>
+                <li> <a href="#network-icon"><i title="network" class="fas fa-wifi"></i> </a></li>
+                <li> <a href="#back"><i title="step back" class="fas fa-step-backward"></i> </a></li>
+                <li> 
+                    <a href="#rating">
+                        <div class="dropdown">
+                            <button id="dropDownRatingButton" title="rate user" class="rating-button">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            <div id="dropDownContent" class="dropdown-content">
+                                <i class="fas fa-star"> 1</i>
+                                <i class="fas fa-star"> 2</i>
+                                <i class="fas fa-star"> 3</i>
+                                <i class="fas fa-star"> 4</i>
+                                <i class="fas fa-star"> 5</i>
+                            </div>
+                        </div>
+                     </a>
+                </li>
             </div>
         </ul>
     </div>
 
     <div class="profile-picture-thumbnail"></div>
 
-    <div class="status-bar">
+    <div id="statusBar" class="status-bar">
         <textarea class="status-textarea"></textarea>
         <div class="status-bar-icons">
             <i class="fas fa-camera"></i>
@@ -49,63 +63,67 @@
             <i class="fas fa-link"></i>
         </div>
     </div>
-    <div class="suggested-circles-section">
-        <h5>In your circles</h5> 
-        
-        <hr />
 
-        <div class="row">
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
+    <div id="circlesSection" class="circles-section">
+        <div class="suggested-circles-section">
+            <h5>In your circles</h5> 
+            
+            <hr />
+
+            <div class="row">
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+            </div>
+
+            <div class="row">
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+            </div>
         </div>
+        
+        <div class="users-circles-section">
+            <h5>circles following</h5> 
+            
+            <hr />
 
-        <div class="row">
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
+            <div class="row">
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+            </div>
+
+            <div class="row">
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+                <div class="avatar-thumbnail"></div>
+            </div>
         </div>
     </div>
-    
-    <div class="users-circles-section">
-        <h5>circles following</h5> 
-        
-        <hr />
 
-        <div class="row">
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-        </div>
-
-        <div class="row">
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-            <div class="avatar-thumbnail"></div>
-        </div>
-    </div>
-
-    <div class="left-panel">
+    <div id="leftPanel" class="left-panel">
         <ul class="left-panel-grid-container">
-            <li><i class="fas fa-home"></i></li>
-            <li><i class="fas fa-user-alt"></i></li>
-            <li><i class="fas fa-copy"></i></li>
-            <li><i class="fas fa-layer-group"></i></li>
-            <li><i class="fas fa-images"></i></li>
-            <li><i class="fas fa-ellipsis-h"></i></li>
+            <li><i title="Home" class="fas fa-home"></i></li>
+            <li><i title="Profile" class="fas fa-user-alt"></i></li>
+            <li><i title="Pages" class="fas fa-copy"></i></li>
+            <li><i title="Overview" class="fas fa-layer-group"></i></li>
+            <li><i title="Photos" class="fas fa-images"></i></li>
+            <li><i title="More" class="fas fa-ellipsis-h"></i></li>
         </ul>
-        
     </div>
 
-    <div class="feeds-or-posts">
+    <button id="toggleButton" type="button" >Toggle</button>
+
+    <div id="feedsOrPosts" class="feeds-or-posts">
         <div class="post">
             <div class="post-profile-picture-thumbnail"></div>
             <div class="card">
@@ -167,5 +185,6 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="./javascript.js"></script>
 </body>
 </html>
